@@ -13,6 +13,16 @@
   --primary-color: rgb(240, 248, 255);
   --secundary-color: rgb(21, 27, 37);
 }
+html, body{
+height: 100%
+}
+.body-container{
+ min-height: 100%;
+}
+#main{
+  overflow: auto;
+  padding-bottom:10px;
+}
 html {
   background-image: radial-gradient(rgb(240, 248, 255), rgb(21, 27, 37));
   font-size: 62.5%;
@@ -119,8 +129,10 @@ body {
 @media screen and (min-width: 850px) {
   .card {
     display: flex;
+    padding-left: 8rem;
     justify-content: space-around;
     padding-top: 8rem;
+
   }
   .card::after {
     content: "";
@@ -173,6 +185,7 @@ body {
 }
 
 /*Footer*/
+
 footer {
   background-color: var(--secundary-color);
   color: var(--primary-color);
@@ -180,7 +193,6 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   padding: 2rem 0;
   font-size: 1.5rem;
-  clear: both;
   max-width: 1221px;
 }
 

@@ -7,70 +7,74 @@
     <link rel="stylesheet" href="/css/basic.css" />
   </head>
   <body>
-    <section class="header-container __container-color">
-      <article class="header-article">
-        <p class="username"><a href="/img/allan.jpg">@Allan31nic</a></p>
-        <img
-          class="allan-picture"
-          src="/img/allan.jpg"
-          alt="Picture of Allan Collado"
-        />
-        <h1 class="name">Allan Eliezer Collado Raudez</h1>
-      </article>
-      <p class="about">
-        An ambitious and self-motivated web developer with a considerable
-        technical skill who possesses self- discipline and ability to work with
-        minimum of supervision. Able to play a key role in website development
-        to ensure maximum accessibility, user experience and usability. A quick
-        learner who can absorb new ideas and can communicate clearly and
-        effectively.
-      </p>
-    </section>
+   <div class="body-container">
+       <div id="main">
+           <section class="header-container __container-color">
+               <article class="header-article">
+                   <p class="username"><a href="/img/allan.jpg">@Allan31nic</a></p>
+                   <img
+                           class="allan-picture"
+                           th:src="@{/img/allan.jpeg}"
+                           alt="Picture of Allan Collado"
+                   />
+                   <h1 class="name">Allan Eliezer Collado Raudez</h1>
+               </article>
+               <p class="about">
+                   An ambitious and self-motivated web developer with a considerable
+                   technical skill who possesses self- discipline and ability to work with
+                   minimum of supervision. Able to play a key role in website development
+                   to ensure maximum accessibility, user experience and usability. A quick
+                   learner who can absorb new ideas and can communicate clearly and
+                   effectively.
+               </p>
+           </section>
 
-    <div class="card">
-      <section class="skills">
-        <h2>Skills:</h2>
-        <article class="skills-article">
-          <dl>
-            <dt>Back-end</dt>
-            <dd>Java</dd>
-            <dd>Python</dd>
-            <dd>C++</dd>
-            <dd>C#</dd>
-          </dl>
-          <dl>
-            <dt>Front-end</dt>
-            <dd>HTML</dd>
-            <dd>Css</dd>
-            <dd>JavaScript</dd>
-          </dl>
-          <dl>
-            <dt>Frameworks</dt>
-            <dd>Spring*</dd>
-            <dd>Spark</dd>
-            <dd>Hibernate</dd>
-          </dl>
-          <dl>
-            <dt>Database</dt>
-            <dd>Mysql</dd>
-          </dl>
-        </article>
-      </section>
-      <section class="edu">
-        <h2>Education:</h2>
-        <div class="education">
-          <dl>
-            <dt>Blue Ridge Comunity Collage</dt>
-            <dd>Software developer degree</dd>
-          </dl>
-          <dl>
-            <dt>Certifications</dt>
-            <dd>Java 11 Developer Profecional</dd>
-          </dl>
-        </div>
-      </section>
-    </div>
-    <footer>
+           <div class="card">
+               <section class="skills">
+                   <h2>Skills:</h2>
+                   <article class="skills-article">
+                       <dl>
+                           <dt>Back-end</dt>
+                           <dd>Java</dd>
+                           <dd>Python</dd>
+                           <dd>C++</dd>
+                           <dd>C#</dd>
+                       </dl>
+                       <dl>
+                           <dt>Front-end</dt>
+                           <dd>HTML</dd>
+                           <dd>Css</dd>
+                           <dd>JavaScript</dd>
+                       </dl>
+                       <dl>
+                           <dt>Frameworks</dt>
+                           <dd>Spring*</dd>
+                           <dd>Spark</dd>
+                           <dd>Hibernate</dd>
+                       </dl>
+                       <dl>
+                           <dt>Database</dt>
+                           <dd>Mysql</dd>
+                       </dl>
+                   </article>
+               </section>
+               <section class="edu">
+                   <h2>Education:</h2>
+                   <div class="education">
+                       <dl>
+                           <dt>Blue Ridge Comunity Collage</dt>
+                           <dd>Software developer degree</dd>
+                       </dl>
+                       <dl>
+                           <dt>Certifications</dt>
+                           <dd>Java 11 Developer Profecional</dd>
+                       </dl>
+                   </div>
+               </section>
+           </div>
+       </div>
+   </div>
+    <footer id="footer">
       <div class="contact-info">
         <p class="footer-titles">Contact info</p>
         <address class="info-content">
