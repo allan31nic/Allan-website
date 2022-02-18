@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,8 +15,8 @@
     <div class="logo">
       <img src="/img/logo3.png" alt="" />
     </div>
-    <form class="email">
-      <input type="email" placeholder="example@xxx.com" />
+    <form class="email" th:action="@{/send}" method="post" >
+      <input type="email" placeholder="example@xxx.com" th:field="${send.email}" />
       <button class="email--btn-color" type="submit">Submit</button>
     </form>
   </body>

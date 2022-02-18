@@ -1,15 +1,15 @@
 package alla.web.model;
 
-public class UserInfo {
+public class UserInf {
 
     private String email;
     private String subject;
     private String body;
 
-    public UserInfo() {
+    public UserInf() {
     }
 
-    public UserInfo(String email, String subject, String body) {
+    public UserInf(String email, String subject, String body) {
         this.email = email;
         this.subject = subject;
         this.body = body;
