@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.mail.MessagingException;
+import java.io.IOException;
 
 
 @Controller
@@ -30,7 +31,7 @@ public class UserController {
         return "form";
     }
     @PostMapping("/send")
-    public String sendEmail(@ModelAttribute UserInf userInf) throws MessagingException {
+    public String sendEmail(@ModelAttribute UserInf userInf) throws MessagingException, IOException {
         smtpMail.send(userInf.getEmail());
         return "redirect:/home";
     }

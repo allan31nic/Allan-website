@@ -254,14 +254,12 @@ nav {
   background-color: var(--secundary-color);
 }
 .nav-header {
-  display: flex;
-  justify-content: end;
   height: 4rem;
 }
 .nav-header a {
   font-size: 2rem;
-  padding-top: 1rem;
-  margin-right: 1rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
 }
 
 .nav-header a:hover {
