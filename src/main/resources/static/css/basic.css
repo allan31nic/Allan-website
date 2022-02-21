@@ -250,16 +250,17 @@ a:active {
   color: yellow;
 }
 /*Form */
-nav {
-  background-color: var(--secundary-color);
-}
 .nav-header {
-  height: 4rem;
-}
-.nav-header a {
+  background-color: var(--secundary-color);
+  height: 6rem;
   font-size: 2rem;
-  margin-top: 3rem;
-  margin-left: 2rem;
+}
+
+.nav-header a{
+display: inline-block;
+
+margin: 2.5rem 2rem;
+
 }
 
 .nav-header a:hover {
